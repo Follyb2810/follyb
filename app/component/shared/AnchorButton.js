@@ -1,7 +1,7 @@
 'use client'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-const AnchorButton = ({ label, url, target, styles, download, click ,btnStyle}) => {
+const AnchorButton = ({ label, url, target, styles, download,btnStyle}) => {
   const handleClick = () => {
     console.log('Button clicked!');
     if (click) {
@@ -18,12 +18,11 @@ const AnchorButton = ({ label, url, target, styles, download, click ,btnStyle}) 
       target={target}
       rel='noreferrer'
       download={download}
-      onClick={handleClick}
+      // onClick={handleClick}
       className={btnStyle}
     >
       {label}
     </a>
-    {click && <ToastContainer />}
     </>
   );
 };

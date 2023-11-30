@@ -23,7 +23,10 @@ const Hero = () => {
         <Typography>{HeroData.content}</Typography>
         <Box sx={{mt:2}}>
         {footData.map((data, index) => (
-            <AnchorButton url={data.path} label={data.icon} key={index} target={data.path.startsWith('htpp')?'_blank':''} rel='noreferrer'/>
+            <AnchorButton url={data.path}
+             label={data.icon} key={index} 
+             target={data.path.startsWith('http')?'_blank':''} 
+             rel='noreferrer'/>
           ))}
         </Box>
       </Grid>

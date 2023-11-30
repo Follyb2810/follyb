@@ -1,4 +1,4 @@
-import {FaGithub,FaTelegram,FaDiscord,FaTwitter} from 'react-icons/fa'
+import {FaGithub,FaTelegram,FaDiscord,FaTwitter, FaLinkedin} from 'react-icons/fa'
 import {GitHub} from '@mui/icons-material';
 import * as IMG  from './../Asset/images/images'
 const data=[
@@ -35,23 +35,28 @@ const data=[
          footData: [
             {
                 social:'Github',
-                path:'',
+                path:'https://github.com/Follyb2810',
                 icon:<FaGithub color='blue' size='20'/>
             },
             {
                 social:'Twiter',
-                path:'https://twitter.com/DeFi_credit?t=DmrsbNRMLVVFsFM6PopMpA&s=09',
+                path:'https://x.com/Babatunde2810?t=&s=09',
                 icon:<FaTwitter color='blue' size='20'/>
             },
             {
                 social:'Telegram',
-                path:'https://t.me/+699uMw5F20I3YTY0',
+                path:'https://t.me/Follyb2810',
                 icon:<FaTelegram color='blue' size='20'/>
             },
             {
                 social:'Discord',
                 path:'',
                 icon:<FaDiscord color='blue' size='20'/>
+            },
+            {
+                social:'Linkedin',
+                path:'https://www.linkedin.com/in/babatunde-yusuf-folorunsho-390869215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+                icon:<FaLinkedin color='blue' size='20'/>
             },
         ]
     },
