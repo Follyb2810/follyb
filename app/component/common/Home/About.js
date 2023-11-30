@@ -20,8 +20,7 @@ const About = () => {
           <AnchorButton
                 label="Download My Cv"
                 url={AboutData[0].path}
-                target={AboutData[0].path.startsWith('http')?'_blank':'
-                '}
+                target={AboutData[0].path.startsWith('http')?'_blank':''}
                 download="BABATUNDE_YUSUF_FOLORUNSHO.pdf"
                 styles={{
                   fontSize: '16px',
