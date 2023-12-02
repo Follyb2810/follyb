@@ -30,7 +30,7 @@ const Project = () => {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                    <AnchorButton btnStyle={StyleModules.btnStyle} label='view' url={data.path} target={data.path.startsWith('http') ? '_blank': ''}/>
+                    <AnchorButton btnStyle={StyleModules.btnStyle} styles={{color:'red'}} label='view the project' url={data.path} target={data.path.startsWith('http') ? '_blank': ''}/>
                 </CardActions>
               </Card>
                   </Grid>
