@@ -8,10 +8,10 @@ const UserSchema=new Schema({
     },
     username: {
         type: String,
-        match: [
-            /^(?=.{8,20})(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$/,
-            'username invalid, it should contain 8-20 alphanumeric characters and must be unique'
-        ]    
+        // match: [
+        //     /^(?=.{8,20})(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$/,
+        //     'username invalid, it should contain 8-20 alphanumeric characters and must be unique'
+        // ]    
     },
     image:{
         type:String 
@@ -20,3 +20,4 @@ const UserSchema=new Schema({
 
 
 const User = models.User || model('User',UserSchema)
+export default User

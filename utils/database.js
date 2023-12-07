@@ -9,10 +9,10 @@ export const connectToDB = async ()=>{
         return
     }
     try {
-        await mongoose.connect(process.env.MONGPDB_URI,{
+        await mongoose.connect(process.env.MONGODB_URI,{
             dbName:'folly_prompt',
-            useNewUrlParser:true,
-            useUnifiedTopology:true
+            // useNewUrlParser:true,
+            // useUnifiedTopology:true
         })
         isConnected=true
     } catch (error) {

@@ -8,13 +8,14 @@ import * as IMG from './../../Asset/images/images'
 const PromptNav = () => {
   const [isUserLogin,setUserLogin]=useState(true)
    const [provider,setProvider]=useState(null)
+   const {data:session,status} =useSession()
    const [toggleDropdown,setToggleDropdown]=useState(false)
    useEffect(()=>{
-    const setProviders = async ()=>{
+    const setUpProviders = async ()=>{
       const response = await getProviders()
       setProvider(response)
     }
-    setProviders()
+    setUpProviders()
    },[])
     return (
         <Container maxWidth='xl'>
@@ -25,12 +26,12 @@ const PromptNav = () => {
           </Link>
           <Box sx={{display:{xs:'none',sm:'flex'}}}>
           {
-            isUserLogin ? (
+            session?.user ? (
               <Box sx={{display:'flex',gap:3,alignItems:'center'}}>
                 <Link href='/create-prompt'>Create Post</Link>
                 <Button variant="outlined" color="secondary" onClick={signOut}>sign Out</Button>
                 <Link href='/profile'>
-                <Image src={IMG.Logo} alt='folly'  width={30} height={30} />
+                <Image src={session?.user.image} alt='folly'  width={30} height={30} />
                 </Link>
                 </Box>
             ):(<>
@@ -38,6 +39,7 @@ const PromptNav = () => {
                     provider && Object.values(provider).map((provider)=>(
                       <Button
                         key={provider.id}
+                        variant="secondary"
                         onClick={()=>signIn(provider.id)}
                       >Sign in</Button>
                     ))
@@ -47,9 +49,9 @@ const PromptNav = () => {
           </Box>
           <Box sx={{display:{xs:'flex',sm:'none',position:'relative'}}}>
           {
-            isUserLogin ? (
+            session?.user ? (
               <Box sx={{display:'flex',gap:3,alignItems:'center'}}>
-                <Image src={IMG.Logo} alt='folly'  
+                <Image src={session?.user.image} alt='folly'  
                 width={30} height={30}
                 onClick={()=>setToggleDropdown(prev =>!prev)}
                 />
@@ -72,6 +74,7 @@ const PromptNav = () => {
                   {
                     provider && Object.values(provider).map((provider)=>(
                       <Button
+                        variant="secondary"
                         key={provider.id}
                         onClick={()=>signIn(provider.id)}
                       >Sign in</Button>
