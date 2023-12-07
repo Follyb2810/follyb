@@ -1,3 +1,4 @@
+'use client'
 import Profile from '@/component/common/prompt/Profile'
 import { useSearchParams } from 'next/navigation'
 import React, { useEffect } from 'react'
