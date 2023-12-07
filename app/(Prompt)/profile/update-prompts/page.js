@@ -2,7 +2,8 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter,usePathname, useSearchParams  } from 'next/navigation'
 import { Box, Container } from '@mui/material'
-import Form from './../../../component/common/prompt/Form'
+import { Form } from '@/component/common/prompt'
+
 
 const EditPrompt = () => {
     const [submiting,setSubmiting]=useState(false)
