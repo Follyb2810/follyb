@@ -1,7 +1,7 @@
 'use client'
 import { Box, Container } from '@mui/material'
 import React,{useState,useEffect} from 'react'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import { useSession } from 'next-auth/react'
 import Profile from '@/component/common/prompt/Profile'
 const MyProfile = () => {

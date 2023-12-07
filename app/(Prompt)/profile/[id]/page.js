@@ -17,12 +17,13 @@ const Page = () => {
     })
   return (
     <Profile
-    name={userName}
-    desc={`welcome to ${userName}'s personalize profilr page.
-      explore ${userName} exceptional prompts ad be inspired by the power of ther imagination
-    `}
-    data={userPost}
-    />
+      aria-label={`Profile of ${userName}`}
+      name={userName}
+      desc={`welcome to ${userName}'s personalize profile page.
+         explore ${userName} exceptional prompts and be inspired by the power of their imagination
+      `}
+      data={userPost}
+      />
   )
 }
 

@@ -52,19 +52,21 @@ const EditPrompt = () => {
 
     }
     return (
-        <Container maxWidth='xl'>
-          <Box sx={{textAlign:'center',mt:10}}>
-          Promt
-          <Form
-            type='Edit'
-            post={post}
-            setPost={setPost}
-            submiting={submiting}
-            handleSubmit={updatePrompt}
-
-          />
-          </Box>
-        </Container>
+      <Container maxWidth='xl'>
+      <Box sx={{textAlign:'center',mt:10}}
+           role='region' 
+           aria-label='Prompt creation form'>
+      Promt
+      <Form
+        aria-label='Create a new prompt'
+        type='Create'
+        post={post}
+        setPost={setPost}
+        submitting={submitting}
+        handleSubmit={createPrompt}
+      />
+      </Box>
+    </Container>
     )
 }
 
