@@ -57,7 +57,7 @@ const Page = ({params}) => {
         ))}
       </Select>
 
-      <LineChart coinHistory={coinHistory} currentPrice={millify(cryptoDetails?.price)} coinName={cryptoDetails?.name}/>
+
       <Grid container spacing={2} mt={2}>
         <Grid item xs={12} sm={6}>
           <Paper elevation={3} sx={{ p: 2 }}>
@@ -83,7 +83,7 @@ const Page = ({params}) => {
           </Paper>
         </Grid>
       </Grid>
-      
+      <LineChart coinHistory={coinHistory} currentPrice={millify(cryptoDetails?.price)} coinName={cryptoDetails?.name}/>
       <Box mt={4}>
         <Typography variant="h6">What is {cryptoDetails?.name}</Typography>
         <Typography>{cryptoDetails?.description && HTMLReactParser(cryptoDetails?.description)}</Typography>
