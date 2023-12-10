@@ -32,7 +32,7 @@ const Hero = () => {
           ))}
         </Box> 
         <Box sx={{display:'flex',gap:2}}>
-        <ButtonComponent url='/nft' variant='contained' color='primary' label='Mint Your Nft'/>
+        <ButtonComponent url='/follyhome' variant='contained' color='primary' label='Mint Your Nft'/>
         <ButtonComponent url='/prompt' variant='contained' color='primary' label='Check In For Ai Prompt'/>
         </Box>
       </Grid>

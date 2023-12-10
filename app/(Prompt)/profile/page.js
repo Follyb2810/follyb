@@ -6,7 +6,7 @@ import { useSession } from 'next-auth/react'
 import Profile from '@/component/common/prompt/Profile'
 const MyProfile = () => {
     const {data:session} = useSession()
-    console.log(session)
+
     const router =useRouter()
     const handleEdit =(post)=>{
         router.push(`/update-propmpts?id=${post._id}`)
@@ -29,12 +29,12 @@ const MyProfile = () => {
     
     useEffect(()=>{
         const fetchPost = async()=>{
-            // const response = await fetch('/api/prompt')
+
             const response = await fetch(`/api/users/${session?.user.id}/posts`)
-            console.log(response)
+            
             const data = await response.json()
             setposts(data)
-            console.log(data)
+
         }
         if(session?.user.id) fetchPost()
     },[])

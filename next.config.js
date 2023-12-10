@@ -25,7 +25,11 @@ const nextConfig = {
       serverComponentsExternalPackages: ["mongoose"],
     },
     images: {
-      domains: ['lh3.googleusercontent.com'],
+      domains: ['lh3.googleusercontent.com','cdn.coinranking.com','www.coindesk.com', 'cloudfront-us-east-1.images.arcpublishing.com'],
+    },
+    env: {
+      customKey: 'my-value',
+      X_RapidAPI_Key:'0da537d340mshc80cdfd3774d48ep1fb564jsnbf1c0de925d6'
     },
     webpack(config) {
       config.experiments = {

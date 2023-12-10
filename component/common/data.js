@@ -32,8 +32,8 @@ const data=[
             },
             {
                 id:3,
-                name:'Nft',
-                path:'/nft'
+                name:'MarketPlace',
+                path:'/follyhome'
             },
         ]
     },

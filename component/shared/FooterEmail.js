@@ -49,13 +49,11 @@ const FooterEmail = () => {
           email: ''
         });
         notify(response.data.message);
-        console.log('Data submitted successfully');
       } else {
-        console.error('Failed to submit data');
+
         notify('Failed to submit data. Please try again.'); 
       }
     } catch (error) {
-      console.error('Error:', error);
       notify(`Error: Enter a valid email`);
 
       // if (error.response) {

@@ -29,7 +29,6 @@ const Page = () => {
               router.push('/prompt')
             }
        } catch (error) {
-          console.log(error)
        }finally{
         setSubmiting(false)
        }

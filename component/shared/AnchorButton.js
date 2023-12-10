@@ -3,7 +3,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const AnchorButton = ({ label, url, target, styles, download,btnStyle}) => {
   const handleClick = () => {
-    console.log('Button clicked!');
     if (click) {
       click();
     }
