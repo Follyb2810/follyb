@@ -30,8 +30,8 @@ export default function Web3NavBar() {
 
   const renderDesktopMenu = () => (
     <Box sx={{ display: { xs: 'none', sm: 'flex' }, justifyContent: 'space-between', alignItems: 'center' }}>
-      <Link href="/exchanges">
-        <Button color="secondary">Exchanges</Button>
+      <Link href="/swap">
+        <Button color="secondary">Swap</Button>
       </Link>
       <Link href="/crypto">
         <Button color="secondary">Cryptocurrencies</Button>
