@@ -152,53 +152,60 @@ const data=[
                         projectImg:IMG.staking
                     },
                     {
-                        id:0,
+                        id:1,
                         name:'Defi Connect Credit',
                         path:'https://deficonnect.credit',
                         description:'',
                         projectImg:IMG.defi
                     },
                     {
-                        id:0,
+                        id:2,
                         name:'Dyleum',
                         path:'https://dyleum.com',
                         description:'',
                         projectImg:IMG.dyleum   
                     },
                     {
-                        id:0,
+                        id:3,
                         name:'SolakGpt',
                         path:'https://solakgpt.vercel.app/',
                         description:'',
                         projectImg:IMG.solak
                     },
                     {
-                        id:0,
+                        id:4,
                         name:'Presentation Ai',
                         path:'https://presentation-drab-xi.vercel.app/',
                         description:'',
                         projectImg:IMG.present
                     },
                     {
-                        id:0,
+                        id:5,
                         name:'Dyleum Testnet',
                         path:'https://dyleum-henna.vercel.app/',
                         description:'',
                         projectImg:IMG.dyleumTestnet
                     },
                     {
-                        id:0,
+                        id:6,
                         name:'Airdrop Calculator',
                         path:'https://statuesque-buttercream-87d3fb.netlify.app/',
                         description:'',
                         projectImg:IMG.Airdrop
                     },
                     {
-                        id:0,
+                        id:7,
                         name:'Food Website',
                         path:'https://food-beta-peach.vercel.app/',
                         description:'',
                         projectImg:IMG.food
+                    },
+                    {
+                        id:8,
+                        name:'Folly Car Hub',
+                        path:'https://follyhub-jsmastery-i3bx.vercel.app/',
+                        description:'',
+                        projectImg:IMG.follyhub
                     },
                 ]
             }
